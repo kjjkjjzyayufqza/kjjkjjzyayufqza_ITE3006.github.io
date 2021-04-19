@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="en"> 
+<head>
+
+
+   <meta charset="utf-8">
+	<title>Osaka</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+    <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+	
+
+	<script src="js/modernizr.js"></script>
+
+
+
+	
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
+
+<style>
+
+</style>
+</head>
+
+<body onload="startTime()">
+
+   
+   <header id="home">
+
+      <nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+         <ul id="nav" class="nav" >
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#about">About</a></li>
+	         <li><a class="smoothscroll" href="#Districts">Districts</a></li>
+
+			<li><a id="button" href="#" ><i class="fa fa-hand-o-right"></i><i class="fa fa-hand-o-right"></i>Account</a>
+			<div class="bg-modal">
+				<div class="modal-content">
+					<div class="close">+</div>
+					<form id="login" class="" method="post" enctype="application/x-www-form-urlencoded" >
+						<h3>Account</h3>
+						<input type="text" pattern="^[a-zA-Z0-9]{6,15}$" placeholder="Name" required>
+						<input type="password" pattern="^[a-zA-Z0-9]{6,15}$" placeholder="Password" required>
+						
+						<input type="submit" value="login" style="background-color : black; display: inline; margin-top: 0px;">
+						<input type="submit" value="register" style="background-color: black; display: inline; margin-top: 0px;">
+					</form>
+				</div>
+			</div>
+			</li>
+			
+					<script src="js/modal.js"></script>
+         </ul> 
+
+
+      </nav> 
+
+      <div class="row banner">
+	  
+         <div class="banner-text">
+		 
+            <h1 class="responsive-headline">Osaka</h1> <br />
+			<font size="8" color="white" >おおさかし</font> <br />
+			<a href="#about" class="button"><i class="fa fa-chevron-down"></i>About Osaka</a>
+			
+
+
+         </div>
+      </div>
+
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
+
+   </header>
+
+   <section id="about">
+	
+      <div class="row">
+			<video autoplay loop muted>
+				<source src="images/vi/Osaka_ Movement [4K Japan Cinematic].mp4" type="video/mp4"  />
+			</video>
+         <div class="three columns">
+
+            <img   src="images/japan_lay_nd.jpg" height="200" width="200" />
+			
+         </div>
+
+         <div class="nine columns main-col">
+
+            <h2>About Osaka</h2>
+
+            <font color="white">
+			Osaka (大阪, Ōsaka) is Japan's second largest metropolitan area after Tokyo. It has been the economic
+			powerhouse of the Kansai Region for many centuries. Osaka was formerly known as Naniwa. Before the 
+			Nara Period, when the capital used to be moved with the reign of each new emperor, Naniwa was once 
+			Japan's capital city, the first one ever known.
+            </font>
+			
+            <div class="row">
+
+               <div class="columns contact-details">
+
+
+               </div>
+
+               <div class="columns download">
+                  <p>
+                     <a href="https://en.wikipedia.org/wiki/Osaka" class="button"><i class="fa fa-hand-o-right"></i>Read More</a>
+                  </p>
+               </div>
+			
+            </div> 
+			</div>
+			</div>
+			
+   </section>
+
+   
+   <section id="Music" >
+
+   <center><font color="white" size="20px">Why not listen to the music</font></center>
+
+         <ul id="nav" class="nav" >
+		 				<div class="music-list">
+				<div class="musiclist-wrap">
+				  <div class="music-play">
+					<div class="music-head">
+					  <div class="music-head-img">
+						<img src="images/giphy2.gif" alt="BGM">
+					  </div>
+					  <a href="javascript:;" data-key="bgm/jinsang  Summers Day v2.mp3" onclick="playMusic(this)" class="music-head-mask">
+						<i class="fa fa-play-circle-o"></i>
+
+					  </a>
+					</div>
+					<div class="music-length text-center">
+					  <span id="music-play-time"></span>
+					  <span> 3 : 00</span>
+					</div>
+				  </div>
+				  <div class="music-info">
+					<div class="music-info-name" title=" BGM ">
+					   BGM
+					</div>
+					        <div class="music-info-author">
+						  <i class="iconfont"></i> BGM- jinsang - Summer's Day [v2]
+						</div>
+					<div class="music-info-uploadtime">
+
+						  <i class="iconfont"></i> <font><span id="nowDateTimeSpan"></span></font> 
+						</div>
+					
+				  </div>
+			  </div>
+			 
+			</div>
+
+			<audio controls="controls" style="display: none" id="music-player">
+			  Your browser does not support the audio element.
+			</audio>
+
+			</section>
+
+   <section id="Districts">
+   
+	<center><hup> Osaka Districts </hup></center><br/>
+	<center><img src="images/osaka/osaka_map.jpg" height="1500" width="1000"> </img></center>
+	<center><p class="load-text"> Where? </p></center><br/>
+
+      <div class="row education">
+
+         <div class="three columns header-col">
+            <h1><span>Minami Area</span></h1>
+			<img src="images/osaka/minami.jpg"  > </img>
+
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>About Minami</h3>
+				  
+                  <p>
+                  Located around Namba Station, Minami <font size="5">(ミナミ, "South")</font> is one of Osaka's two major 
+				  city centers. It is the city's most famous entertainment district and offers abundant
+				  dining and shopping choices. The district is easily accessible as it is served by 
+				  three train companies as well as three subway lines and a highway bus terminal. The 
+				  other major city center is Kita (キタ, "North") which is located around Osaka and Umeda stations.
+                  </p>
+               </div>
+
+            </div>
+
+            <div class="row item">
+                  <p>
+                     <a href="page/MINAMI_AREA.html" class="createbutton">Read More <span class="bg"></span> </a>
+                  </p>
+               
+            </div> 
+
+         </div> 
+
+      </div>
+
+
+      <div class="row work">
+
+         <div class="three columns header-col">
+            <h1><span>OSAKA CASTLE</span></h1>
+			<img src="images/osaka/osaka01.jpg" />
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>About Osaka Castle</h3>
+                  <p>
+                  The construction of Osaka Castle <font size="5">(大阪城, Ōsakajō)</font> started in 1583 on the former site of the Ishiyama
+				  Honganji Temple, which had been destroyed by Oda Nobunaga thirteen years earlier. Toyotomi Hideyoshi
+				  intended the castle to become the center of a new, unified Japan under Toyotomi rule. It was the 
+				  largest castle at the time.
+                  </p>
+
+               </div>
+
+            </div> 
+
+            <div class="row item">
+                  <p>
+                     <a href="page/OSAKA_CASTLE.html" class="createbutton">Read More <span class="bg"></span> </a>
+                  </p>
+            </div> 
+
+         </div> 
+
+      </div> 
+
+      <div class="row work">
+
+         <div class="three columns header-col">
+            <h1><span> Tennoji Area </span></h1>
+			<img src="images/osaka/tennoji.jpg" />
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>About Tennoji</h3>
+
+                  <p>
+                  Located in the southeast of central Osaka, the Tennoji <font size="5">(天王寺, Tennōji)</font> and neighboring Abeno districts
+				  are home to the tallest skyscraper in Japan, Abeno Harukas. Tennoji Station is one of Osaka's largest 
+				  transportation hubs, served by multiple JR and subway lines. Kintetsu Osaka Abenobashi Station is just
+				  across the street.
+                  </p>
+
+               </div>
+
+            </div>
+
+            <div class="row item">
+                  <p>
+                     <a href="page/TENNOJI_AREA.html" class="createbutton">Read More <span class="bg"></span> </a>
+                  </p>
+            </div> 
+
+         </div>
+
+      </div> 
+	  
+	  <div class="row work">
+
+         <div class="three columns header-col">
+            <h1><span> Kita Area </span></h1>
+			<img src="images/osaka/kita.jpg" />
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>About Kita</h3>
+
+                  <p>
+                  Kita, which means “north” in Japanese, is one of the city’s two downtown hubs (the other is the Minami
+				  , or “south,” district). Kita is also known as Umeda, which is the name of one of the main train 
+				  stations here. You’ll probably spend a lot of time in this part of the city. It’s just three stops 
+				  south of Shin-Osaka Station on the Midosuji subway line. And, if you’re coming from Kyoto on the 
+				  regular JR Line or one of the two private lines that connect the cities, you’ll arrive here.
+                  </p>
+
+               </div>
+
+            </div>
+
+            <div class="row item">
+                  <p>
+                     <a href="page/KITA_AREA.html" class="createbutton">Read More <span class="bg"></span> </a>
+                  </p>
+            </div>
+
+         </div> 
+
+      </div> 
+	  
+	  <div class="row work">
+
+         <div class="three columns header-col">
+            <h1><span> Osaka Bay Area </span></h1>
+			<img src="images/osaka/osakabay.jpg" />
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>About Osaka Bay</h3>
+
+                  <p>
+                  The Osaka Bay Area is a collection of young city districts on man-made waterfront islands and
+				  peninsulas, built to accommodate Osaka's sprawling growth. The districts host a variety of 
+				  tourist attractions, such as museums, theme parks, observatories and shopping centers. Osaka's
+				  domestic and international port facilities are also found in the area.
+                  </p>
+
+               </div>
+
+            </div> 
+
+            <div class="row item">
+                  <p>
+                     <a href="page/OSAKA_BAY_AREA.html" class="createbutton">Read More <span class="bg"></span> </a>
+                  </p>
+            </div> 
+
+         </div> 
+
+      </div> 
+      <div class="row skill">
+        
+		<div class="bars">
+				
+		<hup>推奨レベル</hup>
+			<ul class="skills">
+			    <li><span class="bar-expand MINAMI_AREA"></span><em>MINAMI AREA</em></li>
+                <li><span class="bar-expand OSAKA_CASTLE"></span><em>OSAKA CASTLE</em></li>
+				<li><span class="bar-expand TENNOJI_AREA"></span><em>TENNOJI AREA</em></li>
+				<li><span class="bar-expand KITA_AREA"></span><em>KITA AREA</em></li>
+				<li><span class="bar-expand OSAKA_BAY_AREA"></span><em>OSAKA BAY AREA</em></li>
+			</ul>
+
+		</div>
+		<h2>Don’t forget that there are delicious and delicious food</h2><br />
+		 
+		<div >
+		
+		<div id="div1" >
+			<img src="images/food/lamian.jpg" width="200px">
+			<nobr><h3>日本拉面是日式中华料理所使用的面条与面食种类之一，多以切制而非拉制而成。在日本其他常见名称包括“中華そば”。<h3></nobr>
+			<a href="page/food.html" class="createbutton"> 拉麺 <span class="bg"></span> </a>
+			
+		</div>
+		<div id="div1" >
+		<img src="images/food/susi.jpg" width="200px">
+		<nobr><h3>是一種日本料理，主要材料是用醋、糖、鹽調味過，以肥小而稍帶甜味的日本珍珠米所煮成的醋飯<h3></nobr>
+		<a href="page/food.html" class="createbutton"> 寿司 <span class="bg"></span> </a><br />
+		</div>
+
+		<div id="div1" >
+		<img src="images/food/xiaoshi.jpg" width="200px">
+		<nobr><h3>是以燃料加热和干燥空气，并把食物放置于热干空气中一个比较接近热源的位置来加热食物<h3></nobr>
+		<a href="page/food.html" class="createbutton"> バーベキュー <span class="bg"></span> </a><br />
+		</div>
+		<div id="div1" >
+		<img src="images/food/xiaoshi2.jpg" width="200px">
+		<nobr><h3>午後の間食のこと。あるいは、間食全般<h3></nobr>
+		<a href="page/food.html" class="createbutton"> おやつ <span class="bg"></span> </a><br />
+		</div>
+		<div id="div1" >
+		<img src="images/food/ice.jpeg" width="200px">
+		<nobr><h3>は、牛乳などを原料にして<h3></nobr>
+		<a href="page/food.html" class="createbutton"> アイスクリーム <span class="bg"></span> </a><br />
+		</div>
+		</div>
+		 <form method="post" enctype="application/x-www-form-urlencoded" onSubmit="print_thank()" name="f1">
+		<fieldset style="border:2px black solid; border-radius: 20px;">
+			<legend><h1>Feedback</h1></legend>
+
+			What do you think of our website, <br />
+			I hope you can provide us with suggestions, thank you :<br />
+			<textarea  cols="80" rows="3" name="feedback">Nice to meet you !!!</textarea><br />
+			<input type="submit" name="submit" value="Share">
+		</fieldset>	
+		</form>
+		<script>
+			function print_thank(){
+				if(document.f1.feedback.value != "")
+					alert("Thanks for your feedback!");
+			}
+		</script>
+      </div>
+
+   </section>
+
+
+	   
+<script src="js/jquery-1.10.2.min.js"></script>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+	<script src="js/date.js"></script>
+	<script src="js/music.js"></script>
+</body>
+
+</html>
